@@ -1,0 +1,772 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+height: 100vh;
+background-color: #000;
+overflow: hidden;
+}
+
+div.container {
+    position: absolute;
+    top: 20%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.item {
+    position: absolute;
+    background-color: transparent;
+    width: calc(var(--i) * 2.5vmin);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 4px solid rgb(0, 255, 13);
+    transform-style: preserve-3d;
+    transform: rotateX(70deg) translateZ(50px);
+    animation: move 3s ease-in-out calc(var(--i) * 0.08s) infinite;
+   
+}
+
+@keyframes move {
+    0%,
+    100% {
+        transform: rotateX(70deg) translateZ(50px) translateY(0);
+        filter: hue-rotate(0);
+    }
+
+    50% {
+        transform:  rotateX(70deg) translateZ(50px) translateY(-50vmin);
+        filter: hue-rotate(1000deg);
+    }
+}
+
+.h1 {
+    text-align: center;
+    color: white;
+    margin-top: -600px;
+    
+    font-size: 60px;
+    
+    
+}
+
+.span1 {
+    animation-name: spn1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes spn1 {
+    10% {
+        color: red;
+    }
+    20% {
+        color: yellow;
+    }
+    30% {
+        color: green;
+    }
+    40% {
+        color: blue;
+    }
+    50% {
+        color: blueviolet;
+    }
+
+
+    60% {
+        color: darkorange;
+    }
+    70% {
+        color: gold;
+    }
+    80% {
+        color: aqua;
+    }
+    90% {
+        color: lawngreen;
+    }
+    100% {
+        color: salmon;
+    }
+}
+
+.span2 {
+    animation-name: spn2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes spn2 {
+    10% {
+        color: yellow;
+    }
+    20% {
+        color: aqua;
+    }
+    30% {
+        color: blue;
+    }
+    40% {
+        color: green;
+    }
+    50% {
+        color: aquamarine;
+    }
+
+
+    60% {
+        color: blueviolet;
+    }
+    70% {
+        color:hotpink;
+    }
+    80% {
+        color: darkred;
+    }
+    90% {
+        color: yellowgreen;
+    }
+    100% {
+        color: green;
+    }
+}
+
+.span3 {
+    animation-name: spn3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes spn3 {
+    10% {
+        color: darkgray;
+    }
+    20% {
+        color: forestgreen;
+    }
+    30% {
+        color: darkgoldenrod;
+    }
+    40% {
+        color: fuchsia;
+    }
+    50% {
+        color: aqua;
+    }
+
+
+    60% {
+        color: blue;
+    }
+    70% {
+        color:pink;
+    }
+    80% {
+        color: darkorchid;
+    }
+    90% {
+        color: yellow;
+    }
+    100% {
+        color: firebrick;
+    }
+}
+
+.span4 {
+    animation-name: spn4;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes spn4 {
+    10% {
+        color: greenyellow;
+    }
+    20% {
+        color: salmon;
+    }
+    30% {
+        color: chartreuse;
+    }
+    40% {
+        color:salmon;
+    }
+    50% {
+        color: saddlebrown;
+    }
+
+
+    60% {
+        color: blue;
+    }
+    70% {
+        color:blue;
+    }
+    80% {
+        color: darkmagenta;
+    }
+    90% {
+        color: honeydew;
+    }
+    100% {
+        color: darkturquoise;
+    }
+}
+
+.span5 {
+    animation-name: spn5;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes spn5 {
+    10% {
+        color: yellowgreen;
+    }
+    20% {
+        color: aquamarine;
+    }
+    30% {
+        color: blueviolet;
+    }
+    40% {
+        color: gold;
+    }
+    50% {
+        color: crimson;
+    }
+
+
+    60% {
+        color: whitesmoke;
+    }
+    70% {
+        color:rgb(0, 255, 13);
+    }
+    80% {
+        color: violet;
+    }
+    90% {
+        color: yellow;
+    }
+    100% {
+        color: deepskyblue;
+    }
+}
+
+.span6 {
+    animation-name: spn6;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes spn6 {
+    10% {
+        color: violet;
+    }
+    20% {
+        color: darkorchid;
+    }
+    30% {
+        color: darkolivegreen;
+    }
+    40% {
+        color: greenyellow;
+    }
+    50% {
+        color: aqua;
+    }
+
+
+    60% {
+        color: blue;
+    }
+    70% {
+        color: pink;
+    }
+    80% {
+        color: darkcyan;
+    }
+    90% {
+        color: darkgoldenrod;
+    }
+    100% {
+        color: green;
+    }
+}
+
+.span7 {
+    animation-name: spn7;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes spn7 {
+    10% {
+        color: yellow;
+    }
+    20% {
+        color: aqua;
+    }
+    30% {
+        color: blue;
+    }
+    40% {
+        color: green;
+    }
+    50% {
+        color: aquamarine;
+    }
+
+
+    60% {
+        color: blueviolet;
+    }
+    70% {
+        color:hotpink;
+    }
+    80% {
+        color: darkred;
+    }
+    90% {
+        color: yellowgreen;
+    }
+    100% {
+        color: green;
+    }
+}
+
+.span8 {
+    animation-name: spn8;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes spn8 {
+    10% {
+        color: yellowgreen;
+    }
+    20% {
+        color: aquamarine;
+    }
+    30% {
+        color: forestgreen;
+    }
+    40% {
+        color: fuchsia;
+    }
+    50% {
+        color: firebrick;
+    }
+
+
+    60% {
+        color: floralwhite;
+    }
+    70% {
+        color:gold;
+    }
+    80% {
+        color: goldenrod;
+    }
+    90% {
+        color: green;
+    }
+    100% {
+        color: gray;
+    }
+}
+
+.span9 {
+    animation-name: spn9;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes spn9 {
+    10% {
+        color: darkblue;
+    }
+    20% {
+        color: darkcyan;
+    }
+    30% {
+        color: darkgoldenrod;
+    }
+    40% {
+        color: darkgray;
+    }
+    50% {
+        color: darkgreen;
+    }
+
+
+    60% {
+        color: darkkhaki;
+    }
+    70% {
+        color:darkmagenta;
+    }
+    80% {
+        color: darkolivegreen;
+    }
+    90% {
+        color: darkorange;
+    }
+    100% {
+        color:darkorchid;
+    }
+}
+
+.span10 {
+    animation-name: spn10;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes spn10 {
+    10% {
+        color: darkorchid;
+    }
+    20% {
+        color: darkred;
+    }
+    30% {
+        color: darksalmon;
+    }
+    40% {
+        color: darkseagreen;
+    }
+    50% {
+        color:darkslateblue;
+    }
+
+
+    60% {
+        color: darkturquoise;
+    }
+    70% {
+        color:darkviolet;
+    }
+    80% {
+        color: dodgerblue;
+    }
+    90% {
+        color: deeppink;
+    }
+    100% {
+        color: dimgrey;
+    }
+}
+
+.span11 {
+    animation-name: spn11;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes spn11 {
+    10% {
+        color: chartreuse;
+    }
+    20% {
+        color: chocolate;
+    }
+    30% {
+        color: coral;
+    }
+    40% {
+        color: cornflowerblue;
+    }
+    50% {
+        color: crimson;
+    }
+
+
+    60% {
+        color: cyan;
+    }
+    70% {
+        color:rebeccapurple;
+    }
+    80% {
+        color: red;
+    }
+    90% {
+        color: darkred;
+    }
+    100% {
+        color: darkorchid;
+    }
+}
+
+.span12 {
+    animation-name: spn12;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+.span13 {
+    animation-name: spn13;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes spn13 {
+    10% {
+        color: yellowgreen;
+    }
+    20% {
+        color: aquamarine;
+    }
+    30% {
+        color: blueviolet;
+    }
+    40% {
+        color: gold;
+    }
+    50% {
+        color: crimson;
+    }
+
+
+    60% {
+        color: whitesmoke;
+    }
+    70% {
+        color:rgb(0, 255, 13);
+    }
+    80% {
+        color: violet;
+    }
+    90% {
+        color: yellow;
+    }
+    100% {
+        color: deepskyblue;
+    }
+}
+@keyframes spn12 {
+    10% {
+        color: firebrick;
+    }
+    20% {
+        color: floralwhite;
+    }
+    30% {
+        color:forestgreen;
+    }
+    40% {
+        color: fuchsia;
+    }
+    50% {
+        color: aqua;
+    }
+
+
+    60% {
+        color: bluev;
+    }
+    70% {
+        color:pink;
+    }
+    80% {
+        color: red;
+    }
+    90% {
+        color: yellow;
+    }
+    100% {
+        color: honeydew;
+    }
+}
+
+.span14 {
+    animation-name: spn14;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes spn14 {
+    10% {
+        color: yellow;
+    }
+    20% {
+        color: aqua;
+    }
+    30% {
+        color: blue;
+    }
+    40% {
+        color: green;
+    }
+    50% {
+        color: aquamarine;
+    }
+
+
+    60% {
+        color: blueviolet;
+    }
+    70% {
+        color:hotpink;
+    }
+    80% {
+        color: darkred;
+    }
+    90% {
+        color: yellowgreen;
+    }
+    100% {
+        color: green;
+    }
+}
+
+.span15 {
+    animation-name: spn15;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes spn15 {
+    10% {
+        color: f;
+    }
+    20% {
+        color: darkorchid;
+    }
+    30% {
+        color:hotpink;
+    }
+    40% {
+        color: darkkhaki;
+    }
+    50% {
+        color: aqua;
+    }
+
+
+    60% {
+        color: khaki;
+    }
+    70% {
+        color:rgb(62, 46, 4);
+    }
+    80% {
+        color: darkmagenta;
+    }
+    90% {
+        color: yellowgreen;
+    }
+    100% {
+        color: green;
+    }
+}
+
+.span16 {
+    animation-name: spn16;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes spn16 {
+    10% {
+        color: greenyellow;
+    }
+    20% {
+        color: aquamarine;
+    }
+    30% {
+        color: blueviolet;
+    }
+    40% {
+        color: yellowgreen;
+    }
+    50% {
+        color: yellow;
+    }
+
+
+    60% {
+        color: blue;
+    }
+    70% {
+        color:gold;
+    }
+    80% {
+        color: darkorange;
+    }
+    90% {
+        color: rgb(62, 46, 4);
+    }
+    100% {
+        color: darkmagenta;
+    }
+}
+
+.span17 {
+    animation-name: spn17;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes spn17 {
+    10% {
+        color: yellow;
+    }
+    20% {
+        color: aqua;
+    }
+    30% {
+        color: blue;
+    }
+    40% {
+        color: green;
+    }
+    50% {
+        color: aquamarine;
+    }
+
+
+    60% {
+        color: blueviolet;
+    }
+    70% {
+        color:hotpink;
+    }
+    80% {
+        color: darkred;
+    }
+    90% {
+        color: yellowgreen;
+    }
+    100% {
+        color: green;
+    }
+}
